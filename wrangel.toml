@@ -1,0 +1,6 @@
+name = "next-hono"
+compatibility_date = "2024-04-22"
+
+[vars]
+UPSTASH_REDIS_REST_TOKEN = AZ9FASQgZWUzOTM2YWItNmIzOC00NTU5LThjZGQtZDJmMGY4M2I0OWZmNDA1OGJlY2ViY2M4NGM4MDhhMzRiNGNjYjFiZjM5ZmQ=
+UPSTASH_REDIS_REST_URL = https://eu1-dominant-worm-40773.upstash.io

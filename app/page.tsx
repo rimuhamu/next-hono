@@ -14,6 +14,11 @@ export default function Home() {
       if (!input) return setSearchResults(undefined);
 
       const res = await fetch(`/api/search?q=${input}`);
+      const data = (await res.json()) as {
+        results: string[];
+        duration: number;
+      };
+      setSearchResults(data);
     };
     fetchData();
   }, [input]);
@@ -24,6 +29,7 @@ export default function Home() {
         onChange={(e) => {
           setInput(e.target.value);
         }}
+        className='text-zinc-900'
         type='text'></input>
     </div>
   );
